@@ -2,15 +2,13 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 0.94vw;
-}
+
 
 body {
   font-family: "Asap";
   color: #413e4a;
   font-weight: 400;
-  font-size: 1rem;
+  
 }
 
 a {
@@ -66,6 +64,19 @@ nav a {
   text-decoration: none;
   letter-spacing: 2px;
   word-spacing: 5px;
+  transition: all 0.5s  ease;
+}
+
+.cabecera .menu a:hover{
+    color:#f7f6fa
+}
+
+.cabecera .menu a:first-child{
+    margin-left: 0;
+}
+
+.cabecera .menu a:last-child{
+    margin-right: 0;
 }
 
 .cabecera .hamb {
@@ -203,7 +214,20 @@ nav a {
   text-align: center;
   font-size: 40px;
   text-shadow: 2px 2px gray;
+  padding-top: 1rem;
 }
+
+.titulos::before{
+    position: absolute;
+    top: 0;
+    width: 3rem;
+    left: 50%;
+    height:0.13rem ;
+    background-color: #f6f4fa;
+    margin-left: -1.5rem;
+    content: " ";
+}
+
 
 .margin-arriba {
   margin-top: 40px;
@@ -245,11 +269,19 @@ nav a {
   color: #aef012;
 }
 
+.btn.boton-transparente:hover{
+    background-color: #83b60b;
+    border-color: #aef012;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+  }
 .btn.boton-verde {
   background-color: green;
   border-color: green;
   color: #aef012;
 }
+
+
 #banner {
   background-color: #000;
   height: 100vh;
@@ -293,8 +325,9 @@ nav a {
   color: black;
 }
 
-#locales {
-}
+
+/* #locales {
+} */
 
 #locales ul {
   padding-left: 0;
@@ -305,9 +338,16 @@ nav a {
   columns: 3;
 }
 
+
 #servicios {
   margin-bottom: 30px;
 }
+
+#servicios .titulos::before{
+    background-color: #121213;
+    margin-top: 1rem;
+}
+
 
 #servicios .contenedor-serv {
   text-align: center;
@@ -327,6 +367,7 @@ nav a {
   /*background-color: white;*/
   color: #fff;
 }
+
 
 /*
 #testimonio .trama-video
