@@ -156,8 +156,20 @@ nav a {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  /*opacity: 0.75;   
-    filter:grayscale(1)*/
+  transition: all 2s ease;
+  
+}
+
+.conteenedor-cuadrado:hover img {
+  
+ transform: scale(1.5) rotate(30deg);
+  opacity: 0.75;   
+  filter:grayscale(1);
+}
+
+.conteenedor-cuadrado.cont-rect:hover img {
+  transform: none;
+  
 }
 
 .conteenedor-cuadrado .contenido-cuadrado {
@@ -168,7 +180,14 @@ nav a {
   padding-left: 30px;
   top: -100%;
   color: #fff;
+  transition: aLL 0.5s ease;
 }
+
+.conteenedor-cuadrado:hover .contenido-cuadrado {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 .conteenedor-cuadrado .contenido-cuadrado h2 {
   margin-top: 0;
@@ -242,6 +261,7 @@ nav a {
   border-radius: 15px;
   border-width: 2px;
   border-style: solid;
+  transition: all 0.5s ease;
 }
 
 .btn-circulo {
@@ -256,6 +276,7 @@ nav a {
   border-width: 2px;
   border-style: solid;
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 .btn-circulo.borde-blanco {
@@ -296,9 +317,10 @@ nav a {
 }
 #banner .container {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 0;
   right: 0;
+  transform: translateY(-50%);
 }
 #banner .container h1 {
   font-size: 70px;
@@ -355,11 +377,23 @@ nav a {
   padding: 30px;
   height: 100%;
   border-radius: 15px;
+  transition: all .4s ease;
+  
+}
+
+#servicios .contenedor-serv:hover {
+  
   box-shadow: 2px 2px 2px 2px rgb(105, 105, 105);
 }
 
 #servicios .contenedor-serv i {
   font-size: 40px;
+  transition: all .4s ease;
+}
+
+#servicios .contenedor-serv:hover i {
+  
+ transform: scale(1.2);
 }
 
 #testimonio {
@@ -456,13 +490,16 @@ nav a {
     padding-bottom: 40px;
     padding-top: 40px;
   }
+  #banner{
+    height: 100vh;
+  }
 
   #banner .container h1 {
     font-size: 60px;
   }
 
   #banner .container {
-    top: 30%;
+    top: 50%;
   }
   #servicios .contenedor-serv {
     height: auto;
