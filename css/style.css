@@ -227,6 +227,10 @@ nav a {
   padding-left: 0;
 }
 
+.padding-grande
+{
+  padding:4rem
+}
 .conteenedor-cuadrado {
   width: 100%;
   padding-bottom: 100%;
@@ -304,6 +308,12 @@ nav a {
   text-align: center;
 }
 
+.derecha-texto{
+  text-align: right;
+}
+#banner .container .titulo-cocinero {
+  font-size: 65px;
+}
 .inclinar--texto {
   font-style: italic;
 }
@@ -405,13 +415,13 @@ nav a {
 
 #banner {
   background-color: #000;
-  height: 100vh;
+ 
 }
 
 #banner .banner-nosotros
 {
-  width: 100%;
-  height: 50vh;
+  
+  height: 70vh;
   justify-content: top;
  
 }
@@ -422,6 +432,7 @@ nav a {
   display: block;
   opacity: 0.7;
   object-fit: cover;
+  object-position: top;
  
 }
 
@@ -507,6 +518,49 @@ nav a {
   color: #fff;
 }
 
+#cocineros
+{
+
+}
+
+
+#cocineros .columna-cocinero .contenedor-cocinero-imagen {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+#cocineros .columna-cocinero .contenedor-cocinero-imagen img{
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#cocineros .columna-cocinero-info{
+
+  display: flex;
+  justify-content: center;
+  flex-direction:column ;
+
+}
+#cocineros .columna-cocinero-info h2{
+
+  color: #83b60b;
+  margin-top: 0;
+  font-size: 3rem;
+  font-style:italic ;
+
+}
+
+#cocineros .columna-cocinero-info p{
+  font-style: italic;
+  font-size: 1.5rem ;
+  margin: 0;
+}
 /*
 #testimonio .trama-video
 {
@@ -610,7 +664,10 @@ nav a {
     padding-top: 40px;
   }
 
-  
+  .orden
+  {
+    order:0;
+  }
 
   .conteenedor-cuadrado .contenido-cuadrado{
     top:50%;
@@ -620,14 +677,21 @@ nav a {
   .mapa {
     padding-bottom: 100%;
   }
+
+  .padding-grande{
+    padding: 2rem;
+  }
   #banner {
-    height: 100vh;
+    height: 50vh;
   }
 
   #banner .container h1 {
     font-size: 60px;
   }
 
+  #banner .banner-nosotros{
+    height: 50vh;
+  }
   #banner .container {
     top: 50%;
   }
@@ -639,4 +703,23 @@ nav a {
   #lacarta .fila:nth-child(2){
     padding: 0;
   }
+
+  #cocineros .columna-cocinero-info{
+    display:block ;
+    
+  }
+
+  #cocineros .columna-cocinero-info h2{
+    font-size: 2rem;
+  }
+  #cocineros .columna-cocinero-info p{
+    font-size: 1rem;
+  }
+  
+  #cocineros .columna-cocinero-info {
+    text-align: left;
+
+  }
+ 
+  
 }
