@@ -1,3 +1,25 @@
+@font-face {
+  font-family: 'Bahnschrift';
+  src: url('../fonts/Bahnschrift.woff2') format('woff2'),
+      url('../fonts/Bahnschrift.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+ 
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #e1e2de;;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #83b60b;;
+  outline: 1px solid #83b60b;;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -128,6 +150,8 @@ nav a {
   transition: all 0.5s ease;
 }
 
+
+.cabecera .menu .seleccionado,
 .cabecera .menu a:hover {
   color: #f7f6fa;
 }
@@ -275,6 +299,7 @@ nav a {
   padding-bottom: 4rem;
 }
 
+
 .centrar-texto {
   text-align: center;
 }
@@ -382,14 +407,25 @@ nav a {
   background-color: #000;
   height: 100vh;
 }
-#banner .banner-home {
+
+#banner .banner-nosotros
+{
   width: 100%;
-  height: 100%;
+  height: 50vh;
+  justify-content: top;
+ 
+}
+
+#banner .banner-home
+{
+  width: 100%;
   display: block;
   opacity: 0.7;
   object-fit: cover;
-  object-position: center;
+ 
 }
+
+
 #banner .container {
   position: absolute;
   top: 50%;
@@ -573,6 +609,8 @@ nav a {
     padding-bottom: 40px;
     padding-top: 40px;
   }
+
+  
 
   .conteenedor-cuadrado .contenido-cuadrado{
     top:50%;
