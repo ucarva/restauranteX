@@ -1,11 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@800&family=Asap:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icono.png">
+    <script src="https://kit.fontawesome.com/5ea90b4e25.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <h1>Contacto</h1>
+    <header class="cabecera">
+        <div class="container">
+            <a href="index.html" class="link-logo">
+                <img class="logo" src="img/logo.png" alt="logo restaurante">
+            </a>
+            <nav class="menu">
+                <a href="index.html#lacarta" class="seccion">La Carta</a>
+                <a href="index.html#locales">Locales</a>
+                <a href="nosotros.html " target="_blank">Nosotros</a>
+                <a href="contacto.html" class="seleccionado" target="_blank">contacto</a>
+            </nav>
+            <a href="#" class="hamb"><i class="fa-sharp fa-solid fa-bars"></i></i></a>
+        </div>
+    </header>
+    <main>
+        <section id="banner" class="">
+            <img class="banner-contacto banner-home " src="img/contacto.webp" alt="imagen de banner" width="1920"
+                height="1080">
+
+            <div class="container">
+                <div class="fila fila-centrada">
+                    <div class="columna columna-50 columna-mb-100">
+                        <h1 class="titulo-cocinero centrar-texto">Contáctanos</h1>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="saltarina"><i class="fas fa-chevron-down"></i></a>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <div class="container">
+                <div class="fila  ">
+                    <div class="columna columna-50 columna-mb-100 ">
+                        <form id="frmcontacto" action="registro.php" method="post" >
+                            <div class="form-bloques">
+                                <input class="form-input" type="text" placeholder="Nombre" name="nombre" required>
+                            </div>
+                            <div class="form-bloques">
+                                <input class="form-input" type="email" placeholder="Email" name="email" required>
+                            </div>
+                            <div class="form-bloques">
+                                <input class="form-input" type="asunto" placeholder="Asunto" name="asunto" required>
+                            </div>
+                            <div class="form-bloques">
+                                <textarea class="form-input" required name="mensaje" placeholder="Mensaje" ></textarea>
+                            </div>
+                            <div class="form-bloques form-bloque-boton">
+                                <input  type="submit" value="ENVIAR" class="btn boton-verde">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="columna columna-50 columna-mb-100 derecha-texto columna-info-contacto">
+                        <p  > Visitanos</p>
+                        <h2>av. Circunvalar 123 Ocaña, Norte santaner - Colombia</h2>
+                        <a href="tel:+575326568" class="telefono">+575326568</a>
+                        <a href="mailto:nuevocorreo24@gmail.com" class="email">nuevocorreo24@gmail.com</a>
+                    </div>
+
+
+                </div>
+            </div>
+           
+        </section>
+
+    </main>
+    <footer>
+        <div class="prefooter">
+            <div class="container">
+                <div class="fila">
+                    <div class="columna columna-100">
+                        <div class="mapa">
+                            <iframe width="520" height="400" frameborder="0" scrolling="no" marginheight="0"
+                                marginwidth="0" id="gmap_canvas"
+                                src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20oca%C3%B1a+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pie">
+                <div class="container">
+                    <div class="fila ">
+                        <div class="columna columna-33 empujar-33 empujar-mb-0  columna-mb-100 orden lista-redes">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                        <div class="columna columna-33 columna-mb-100">
+                            <p> Derechos reservador &reg Uriel Carvajalino Ortiz</p>
+                        </div>
+                    </div>
+                </div>
+    </footer>
+
+
+
 </body>
+
 </html>
