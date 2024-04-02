@@ -38,9 +38,6 @@ section {
   position: relative;
 }
 
-footer {
-}
-
 footer .prefooter .mapa {
   position: relative;
   bottom: -2rem;
@@ -311,9 +308,7 @@ nav a {
 .derecha-texto{
   text-align: right;
 }
-#banner .container .titulo-cocinero {
-  font-size: 65px;
-}
+
 .inclinar--texto {
   font-style: italic;
 }
@@ -471,20 +466,41 @@ nav a {
   margin-top: 0;
 }
 
-#banner,
+#bannerhome
+
+{ 
+  height: 100vh;
+  background-color: #000;
+}
+#banner .container .titulo-cocinero {
+  font-size: 65px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  transform: translateY(-50%);
+}
+
+#banner .container .titulo-cocinero h1{
+  font-size: 70px;
+  
+  margin: 0;
+}
+
 #banner .banner-nosotros,
 #banner .banner-contacto
 {
+  display: block;
   
-  height: 70vh;
-  justify-content: top;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
   background-color: #000;
- 
+
 }
 
-
-
-#banner .banner-home 
+#bannerhome .banner-home 
 {
   
   width: 100%;
@@ -496,20 +512,20 @@ nav a {
 }
 
 
-#banner .container {
+#bannerhome .container {
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
 }
-#banner .container h1 {
+#bannerhome .container h1 {
   font-size: 70px;
   color: #fff;
   margin: 0;
 }
 
-#banner .container p {
+#bannerhome .container p {
   font-size: 20px;
   color: #aef012;
   line-height: 1.5;
@@ -645,13 +661,13 @@ nav a {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 999px) {
   .container {
     width: 750px;
   }
 }
 
-@media (min-width: 300px ) and (max-width:767px) 
+@media (min-width: 300px ) and (max-width:998px) 
  
   {
   footer .pie .lista-redes {
@@ -738,15 +754,15 @@ nav a {
   .padding-grande{
     padding: 2rem;
   }
-  #banner {
+  #bannerhome {
     height: 100vh;
   }
 
-  #banner .container .titulo-cocinero {
+  #bannerhome .container .titulo-cocinero {
     font-size: 50px;
 }
 
-  #banner .container h1 {
+  #bannerhome .container h1 {
     font-size: 60px;
   }
 
@@ -755,7 +771,7 @@ nav a {
   {
     height: 50vh;
   }
-  #banner .container {
+  #bannerhome .container {
     top: 50%;
   }
   #servicios .contenedor-serv {
